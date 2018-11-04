@@ -36,7 +36,7 @@ void Test::runTests()
   std::cout << std::endl;
 
   LinkedListOfInts list4;
-  std::cout << "Test 4: AddFront(1) on empty list: ";
+  std::cout << "Test 4: addFront(1) on empty list: ";
   resultPrint(testAddFront(list4, 1));
 
   LinkedListOfInts list5;
@@ -50,13 +50,13 @@ void Test::runTests()
   list6.addFront(3);
   list6.addFront(4);
   list6.addFront(5);
-  std::cout << "Test 6: AddFront(6) on list of size 5: ";
+  std::cout << "Test 6: addFront(6) on list of size 5: ";
   resultPrint(testAddFront(list6, 6));
 
   std::cout << std::endl;
 
   LinkedListOfInts list7;
-  std::cout << "Test 7: AddBack(1) on empty list: ";
+  std::cout << "Test 7: addBack(1) on empty list: ";
   resultPrint(testAddBack(list7, 1));
 
   LinkedListOfInts list8;
@@ -70,7 +70,7 @@ void Test::runTests()
   list9.addBack(3);
   list9.addBack(4);
   list9.addBack(5);
-  std::cout << "Test 9: AddBack(6) on list of size 5: ";
+  std::cout << "Test 9: addBack(6) on list of size 5: ";
   resultPrint(testAddBack(list9, 6));
 
   std::cout << std::endl;
@@ -110,7 +110,7 @@ void Test::runTests()
   std::cout << std::endl;
 
   LinkedListOfInts list15;
-  std::cout << "Test 15: Search(5) on empty list: ";
+  std::cout << "Test 15: search(5) on empty list: ";
   resultPrint(testSearch(list15, 5, false));
 
   LinkedListOfInts list16;
@@ -172,7 +172,7 @@ void Test::runTests()
   std::cout << std::endl;
 
   LinkedListOfInts list24;
-  std::cout << "Test 24: RemoveFront() on empty list: ";
+  std::cout << "Test 24: removeFront() on empty list: ";
   resultPrint(testRemoveFront(list24, true, 0));
 
   LinkedListOfInts list25;
@@ -206,7 +206,7 @@ void Test::runTests()
   std::cout << std::endl;
 
   LinkedListOfInts list29;
-  std::cout << "Test 29: RemoveBack() on empty list: ";
+  std::cout << "Test 29: removeBack() on empty list: ";
   resultPrint(testRemoveBack(list29, true, 0));
 
   LinkedListOfInts list30;
