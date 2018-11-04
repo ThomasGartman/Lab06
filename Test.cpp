@@ -300,11 +300,13 @@ bool Test::testRemoveFront(LinkedListOfInts list, bool expected, int expectedVal
   //empty list behavior
   if(!list.removeFront())
   {
+    std::cout << "1"
     return expected;
   }
   std::vector<int> tempVector = list.toVector();
   if(tempVector.empty())
   {
+    std::cut << "2"
     return !expected;
   }
   else if(tempVector.front() == expectedValue)
