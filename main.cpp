@@ -10,11 +10,8 @@
 
 int main(int argc, char** argv)
 {
-	//Example of declaring a LinkedListOfInts
-	LinkedListOfInts testableList;
-
-  Test test;
-	test.runTests(testableList);
+        Test test;
+	test.runTests();
 
 	std::cout << "Running...\nAnd we're done.\nGoodbye.\n";
 

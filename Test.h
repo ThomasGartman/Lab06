@@ -24,7 +24,7 @@ class Test
     * @post Test Results known
     * @return None
     */
-    void runTests(LinkedListOfInts list);
+    void runTests();
 
     /**
     * @pre Linked List Exists
