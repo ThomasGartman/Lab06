@@ -178,13 +178,13 @@ void Test::runTests()
   LinkedListOfInts list25;
   list25.addFront(1);
   std::cout << "Test 25: removeFront() list of size 1, using 1 addFront call: ";
-  resultPrint(testRemoveFront(list25, true, 0));
+  resultPrint(testRemoveFront(list25, false, 0));
 
   LinkedListOfInts list26;
   list26.addBack(1);
   list26.addBack(2);
   std::cout << "Test 26: removeFront() list of size 2, using 2 addBack calls: ";
-  resultPrint(testRemoveFront(list26, true, 2));
+  resultPrint(testRemoveFront(list26, false, 2));
 
   LinkedListOfInts list27;
   list27.addFront(1);
@@ -193,18 +193,18 @@ void Test::runTests()
   list27.addFront(4);
   list27.addFront(5);
   std::cout << "Test 27: removeFront() list of size 5, using 5 addFront calls: ";
-  resultPrint(testRemoveFront(list27, true, 2));
+  resultPrint(testRemoveFront(list27, false, 2));
 
   LinkedListOfInts list28;
   list28.addBack(1);
   std::cout << "Test 28: removeFront() list of size 1, using 1 addBack call: ";
-  resultPrint(testRemoveFront(list28, true, 0));
+  resultPrint(testRemoveFront(list28, false, 0));
 
   LinkedListOfInts list29;
   list29.addBack(1);
   list29.addBack(2);
   std::cout << "Test 29: removeFront() list of size 2, using 2 addBack calls: ";
-  resultPrint(testRemoveFront(list29, true, 2));
+  resultPrint(testRemoveFront(list29, false, 2));
 
   LinkedListOfInts list30;
   list30.addBack(1);
@@ -213,24 +213,24 @@ void Test::runTests()
   list30.addBack(4);
   list30.addBack(5);
   std::cout << "Test 30: removeFront() list of size 5, using 5 addBack calls: ";
-  resultPrint(testRemoveFront(list30, true, 2));
+  resultPrint(testRemoveFront(list30, false, 2));
 
   std::cout << std::endl;
 
   LinkedListOfInts list31;
   std::cout << "Test 31: removeBack() on empty list: ";
-  resultPrint(testRemoveBack(list31, true, 0));
+  resultPrint(testRemoveBack(list31, false, 0));
 
   LinkedListOfInts list32;
   list32.addFront(1);
   std::cout << "Test 32: removeBack() list of size 1, using 1 addFront call: ";
-  resultPrint(testRemoveFront(list32, true, 0));
+  resultPrint(testRemoveFront(list32, false, 0));
 
   LinkedListOfInts list33;
   list33.addFront(1);
   list33.addFront(2);
   std::cout << "Test 33: removeBack() list of size 2, using 2 addFront calls: ";
-  resultPrint(testRemoveFront(list33, true, 1));
+  resultPrint(testRemoveFront(list33, false, 1));
 
   LinkedListOfInts list34;
   list34.addFront(1);
@@ -239,18 +239,18 @@ void Test::runTests()
   list34.addFront(4);
   list34.addFront(5);
   std::cout << "Test 34: removeBack() list of size 5, using 5 addFront calls: ";
-  resultPrint(testRemoveBack(list34, true, 4));
+  resultPrint(testRemoveBack(list34, false, 4));
 
   LinkedListOfInts list35;
   list35.addBack(1);
   std::cout << "Test 35: removeBack() list of size 1, using 1 addBack call: ";
-  resultPrint(testRemoveBack(list35, true, 0));
+  resultPrint(testRemoveBack(list35, false, 0));
 
   LinkedListOfInts list36;
   list36.addBack(1);
   list36.addBack(2);
   std::cout << "Test 36: removeBack() list of size 2, using 2 addBack calls: ";
-  resultPrint(testRemoveBack(list36, true, 1));
+  resultPrint(testRemoveBack(list36, false, 1));
 
   LinkedListOfInts list37;
   list37.addBack(1);
@@ -259,7 +259,7 @@ void Test::runTests()
   list37.addBack(4);
   list37.addBack(5);
   std::cout << "Test 37: removeBack() list of size 5, using 5 addBack calls: ";
-  resultPrint(testRemoveBack(list37, true, 4));
+  resultPrint(testRemoveBack(list37, false, 4));
 }
 
 bool Test::testIsEmpty(LinkedListOfInts list, bool expected)
@@ -346,7 +346,6 @@ bool Test::testAddBack(LinkedListOfInts list, int expectedValue)
   {
     return true;
   }
-  std::cout << tempVector.front();
   return false;
 }
 
