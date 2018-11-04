@@ -61,7 +61,7 @@ void Test::runTests()
 
   LinkedListOfInts list8;
   list8.addBack(1);
-  std::cout << "Test 8: addFront(2) on list of size 1, using 1 addBack: ";
+  std::cout << "Test 8: addBack(2) on list of size 1, using 1 addBack: ";
   resultPrint(testAddBack(list8, 2));
 
   LinkedListOfInts list9;
@@ -217,25 +217,37 @@ void Test::runTests()
   LinkedListOfInts list31;
   list31.addFront(1);
   list31.addFront(2);
-  list31.addFront(3);
-  list31.addFront(4);
-  list31.addFront(5);
-  std::cout << "Test 31: removeBack() list of size 5, using 5 addFront calls: ";
-  resultPrint(testRemoveBack(list31, true, 4));
+  std::cout << "Test 31: removeBack() list of size 2, using 2 addFront calls: ";
+  resultPrint(testRemoveFront(list30, true, 1));
 
   LinkedListOfInts list32;
-  list32.addBack(1);
-  std::cout << "Test 32: removeBack() list of size 1, using 1 addBack call: ";
-  resultPrint(testRemoveBack(list32, true, 0));
+  list32.addFront(1);
+  list32.addFront(2);
+  list32.addFront(3);
+  list32.addFront(4);
+  list32.addFront(5);
+  std::cout << "Test 32: removeBack() list of size 5, using 5 addFront calls: ";
+  resultPrint(testRemoveBack(list32, true, 4));
 
   LinkedListOfInts list33;
   list33.addBack(1);
-  list33.addBack(2);
-  list33.addBack(3);
-  list33.addBack(4);
-  list33.addBack(5);
-  std::cout << "Test 33: removeBack() list of size 5, using 5 addBack calls: ";
-  resultPrint(testRemoveBack(list33, true, 4));
+  std::cout << "Test 33: removeBack() list of size 1, using 1 addBack call: ";
+  resultPrint(testRemoveBack(list33, true, 0));
+
+  LinkedListOfInts list34;
+  list34.addBack(1);
+  list34.addBack(2);
+  std::cout << "Test 34: removeBack() list of size 2, using 2 addBack calls: ";
+  resultPrint(testRemoveBack(list34, true, 1));
+
+  LinkedListOfInts list35;
+  list35.addBack(1);
+  list35.addBack(2);
+  list35.addBack(3);
+  list35.addBack(4);
+  list35.addBack(5);
+  std::cout << "Test 35: removeBack() list of size 5, using 5 addBack calls: ";
+  resultPrint(testRemoveBack(list35, true, 4));
 }
 
 bool Test::testIsEmpty(LinkedListOfInts list, bool expected)
