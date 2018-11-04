@@ -328,6 +328,7 @@ bool Test::testRemoveBack(LinkedListOfInts list, bool expected, int expectedValu
   }
   else if(tempVector.back() == expectedValue)
   {
+    std::cout << tempVector.back();
     return true;
   }
   return false;
@@ -345,7 +346,7 @@ bool Test::testAddBack(LinkedListOfInts list, int expectedValue)
   {
     return true;
   }
-  std::cout << tempVector.back();
+  std::cout << tempVector.front();
   return false;
 }
 
