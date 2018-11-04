@@ -60,6 +60,27 @@ class Test
     * @return True if Test Passed, False Otherwise
     */
     bool testRemoveFront(LinkedListOfInts list, bool expected, int expectedValue);
+  
+    /**
+    * @pre Linked List Exists
+    * @post None
+    * @return True if Test Passed, False Otherwise
+    */
+    bool testRemoveBack(LinkedListOfInts list, bool expected, int expectedValue);
+
+    /**
+    * @pre Linked List Exists
+    * @post None
+    * @return True if Test Passed, False Otherwise
+    */
+    bool testAddBack(LinkedListOfInts list, int expectedValue);
+
+    /**
+    * @pre Linked List Exists
+    * @post None
+    * @return True if Test Passed, False Otherwise
+    */
+    bool testSearch(LinkedListOfInts list, int searchNumber, bool expected);
 
   private:
     //Credit for this approach goes to http://www.cplusplus.com/forum/beginner/1640/ user jsmith
