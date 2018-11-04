@@ -1,0 +1,9 @@
+It is clear that there are four bugs:
+1. isEmpty() is always returning true.
+2. AddBack() is not implemented correctly. It appears to be adding numbers into the list (see the search tests) but not in the correct order.
+3. RemoveFront() is not implemented correctly. It fails to remove any number on a list of size 1 or greater.
+4. RemoveBack() is not implemented correctly. It fails to remove any number on a list of size 1 or greater.
+
+It would appear that both RemoveFront() and RemoveBack() rely on isEmpty() to determine whether or not to attempt a deletion of a node. This implies that fixing isEmpty() would likely fix RemoveFront() and RemoveBack(). After fixing isEmpty(), rerun this script to determine if that fixed RemoveFront() and RemoveBack() or not.
+
+Also, the .o file ran on the lab machines but not on my Ubuntu 18.04 machine at home. I got error: "Relocation R_X86_64_32 against symbol '_ZTV16LinkedListOfInts' cannot be used when making a PIE object.'

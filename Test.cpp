@@ -224,13 +224,13 @@ void Test::runTests()
   LinkedListOfInts list32;
   list32.addFront(1);
   std::cout << "Test 32: removeBack() list of size 1, using 1 addFront call: ";
-  resultPrint(testRemoveFront(list32, false, 0));
+  resultPrint(testRemoveBack(list32, false, 0));
 
   LinkedListOfInts list33;
   list33.addFront(1);
   list33.addFront(2);
   std::cout << "Test 33: removeBack() list of size 2, using 2 addFront calls: ";
-  resultPrint(testRemoveFront(list33, false, 1));
+  resultPrint(testRemoveBack(list33, false, 1));
 
   LinkedListOfInts list34;
   list34.addFront(1);
@@ -300,20 +300,17 @@ bool Test::testRemoveFront(LinkedListOfInts list, bool expected, int expectedVal
   //empty list behavior
   if(!list.removeFront())
   {
-    std::cout << "1"
     return expected;
   }
   std::vector<int> tempVector = list.toVector();
   if(tempVector.empty())
   {
-    std::cut << "2"
     return !expected;
   }
   else if(tempVector.front() == expectedValue)
   {
     return true;
   }
-  std::cout << tempVector.front();
   return false;
 }
 
