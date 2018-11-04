@@ -311,6 +311,7 @@ bool Test::testRemoveFront(LinkedListOfInts list, bool expected, int expectedVal
   {
     return true;
   }
+  std::cout << tempVector.front();
   return false;
 }
 
